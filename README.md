@@ -17,10 +17,12 @@ At the top of the form, you'll see some boxes where you can enter your shipment 
 🔑 Primary Key
 The most important box is the "Shipment No." box. This is like a special code for each shipment.
 
+
 🛠 Usage
 When you open the form, only the "Shipment No." box will be active. 👀
 Type in your Shipment No.
 If the number you type in doesn't exist in the database, the "Save" and "Reset" buttons will light up. 🌟
+
 You can then fill in the rest of the boxes. Remember, don't leave any box empty! 🤔
 Once you've filled in all the boxes, click on the "Save" button to save your data to the database. 💾
 If the number you type in already exists in the database, the form will fill in with the info you previously entered. 🎉
