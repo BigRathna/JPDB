@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>good Database</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>JPDB interation form</h2>
+        <form id="empForm" method="post">
+            <div class="form-group">
+                <span><label for="shipmentId">Shipment ID:</label> <label id="shipmentIdMsg">
+                    </label></span>
+                <input type="text" class="form-control" name="shipmentId" id="shipmentId"
+                    placeholder="Enter Shipment ID" required onchange="getExisting()">
+            </div>
+            <div class="form-group">
+                <label for="description">Description of the Shipment:</label>
+                <input type="text" class="form-control" id="description" placeholder="Enter Shipment Description"
+                    name="description" disabled>
+            </div>
+            <div class="form-group">
+                <label for="source">Source Address:</label>
+                <input type="text" class="form-control" id="source" placeholder="Enter Source Address" name="source"
+                    disabled>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" class="form-control" id="destination" placeholder="Enter Shipment Destination"
+                    name="destination" disabled>
+            </div>
+            <div class="form-group">
+                <label for="shippingDate">DATE:</label>
+                <input type="text" class="form-control" id="shippingDate" placeholder="Enter Shipment DATE"
+                    name="shippingDate" disabled>
+            </div>
+            <div class="form-group">
+                <label for="expectedDelivery">Expected Delivery:</label>
+                <input type="text" class="form-control" id="expectedDelivery"
+                    placeholder="Enter Shipment Expected Delivery" name="expectedDelivery" disabled>
+            </div>
+            <button type="button" class="btn btn-primary" id="save" onclick="save();" disabled>Save</button>
+            <button type="button" class="btn btn-success" id="change" onclick="update();" disabled>Change</button>
+            <button type="button" class="btn btn-reset" id="reset" onclick="resetData();" disabled>Reset</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
